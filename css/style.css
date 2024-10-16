@@ -1,0 +1,58 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #d2f4d2; /* light green background */
+    color: black; /* black text */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #005700; /* dark green header */
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #004400; /* darker green subheaders */
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: block; /*make button */
+    padding: 10px 20px;
+    background-color: #2C5D34; /* dark hunter green */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto; /* centers button */
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #3A7B4A; /* lighter green on hover */
+}
+
+img {
+    display: block; 
+    width: 150px; /* set width of each image */
+    margin: 10px auto; /* centers images */
+}
+
+a {
+    display: block; /* makes YouTube links buttons */
+    text-align: center; /* centers link */
+    color: #2C5D34; /* match color for button */
+    text-decoration: underline; /* underline the links to emphasize presence */
+    margin: 10px auto; 
+}
+
+a:hover {
+    text-decoration: none; /* removes underline when the button is hovered over*/
+}
+
