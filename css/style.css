@@ -5,6 +5,34 @@ body {
     margin: 0;
     padding: 20px;
 }
+nav#main-nav {
+    background-color: #005700; /* dark green background */
+    padding: 10px 0; 
+}
+
+nav#main-nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+nav#main-nav ul li {
+    margin: 0 15px; 
+}
+
+nav#main-nav ul li a {
+    text-decoration: none; 
+    color: white; /* text color */
+    padding: 10px 15px; 
+    transition: background-color 0.3s; /* transition for hover */
+}
+
+nav#main-nav ul li a:hover {
+    background-color: #66cc66; /* light green on hover */
+    border-radius: 5px; /* rounded corners */
+}
+
 
 h1 {
     text-align: center;
