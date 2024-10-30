@@ -6,6 +6,7 @@ body {
     padding: 20px;
 }
 nav#main-nav {
+    text-align: center;
     background-color: #005700; /* dark green background */
     padding: 10px 0; 
 }
@@ -14,7 +15,7 @@ nav#main-nav ul {
     list-style-type: none; 
     padding: 0;
     margin: 0;
-    display: flex; 
+    display: inline-flex; 
 }
 
 nav#main-nav ul li {
@@ -22,10 +23,12 @@ nav#main-nav ul li {
 }
 
 nav#main-nav ul li a {
+    Display: inline-block
     text-decoration: none; 
     color: white; /* text color */
-    padding: 10px 15px; 
-    transition: background-color 0.3s; /* transition for hover */
+   background-color: #005700; /* same background as nav */
+    border-radius: 5px; /* rounded corners */
+    transition: background-color 0.3s;
 }
 
 nav#main-nav ul li a:hover {
