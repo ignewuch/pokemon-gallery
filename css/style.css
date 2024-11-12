@@ -1,34 +1,42 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+
+/* Body Styles */
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif, Arial, sans-serif; /* added font-family fallback */
     background-color: #d2f4d2; /* light green background */
     color: black; /* black text */
     margin: 0;
     padding: 20px;
 }
+
+/* Navigation Styles */
 nav#main-nav {
     text-align: center;
     background-color: #005700; /* dark green background */
-    padding: 10px 0; 
+    padding: 10px 0;
 }
 
 nav#main-nav ul {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    display: inline-flex; 
+    display: inline-flex; /* inline flex to align items horizontally */
+    justify-content: center; /* center the navigation links */
 }
 
 nav#main-nav ul li {
-    margin: 0 15px; 
+    margin: 0 15px; /* space between navigation items */
 }
 
 nav#main-nav ul li a {
-    Display: inline-block
+    display: inline-block; /* corrected display property */
     text-decoration: none; 
     color: white; /* text color */
-   background-color: #005700; /* same background as nav */
+    background-color: #005700; /* same background as nav */
     border-radius: 5px; /* rounded corners */
-    transition: background-color 0.3s;
+    padding: 10px 20px; /* Padding for the links */
+    transition: background-color 0.3s; /* smooth transition for hover effect */
 }
 
 nav#main-nav ul li a:hover {
@@ -36,7 +44,7 @@ nav#main-nav ul li a:hover {
     border-radius: 5px; /* rounded corners */
 }
 
-
+/* Header Styles */
 h1 {
     text-align: center;
     color: #005700; /* dark green header */
@@ -48,19 +56,21 @@ h2 {
     margin-top: 20px;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     margin-top: 20px;
 }
 
+/* Button Styles */
 .button {
-    display: block; /*make button */
+    display: block; /* make button a block-level element */
     padding: 10px 20px;
     background-color: #2C5D34; /* dark hunter green */
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin: 20px auto; /* centers button */
+    margin: 20px auto; /* centers the button */
     text-align: center;
     transition: background-color 0.3s;
 }
@@ -69,21 +79,25 @@ footer {
     background-color: #3A7B4A; /* lighter green on hover */
 }
 
+/* Image Styles */
 img {
     display: block; 
     width: 150px; /* set width of each image */
     margin: 10px auto; /* centers images */
+    border-radius: 8px; /* rounded corners for the images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* light shadow for images */
 }
 
+/* Link Styles */
 a {
-    display: block; /* makes YouTube links buttons */
-    text-align: center; /* centers link */
+    display: block; /* makes YouTube links look like buttons */
+    text-align: center; /* centers the link */
     color: #2C5D34; /* match color for button */
-    text-decoration: underline; /* underline the links to emphasize presence */
+    text-decoration: underline; /* underline the links */
     margin: 10px auto; 
 }
 
 a:hover {
-    text-decoration: none; /* removes underline when the button is hovered over*/
+    text-decoration: none; /* removes underline on hover */
 }
 
