@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <title>Pokémon Gallery</title>
 
+  <!-- include the external javascript file for the slider -->
+  <script src="js/slider.js" defer></script>
+
   <!-- link to the css reset -->
   <link rel="stylesheet" type="text/css" href="css/reset.css">
 
@@ -26,7 +29,7 @@
   <!-- section for each pokémon -->
   <section>
     <h2>1. pikachu</h2>
-    <img src="media/pikachu.jpg" alt="pikachu" />
+    <img src="media/pikachu.jpg" alt="pikachu" class="pokemon-image"/>
     <p>pikachu is an electric-type pokémon. pikachu is known for its cute appearance and its ability to generate electricity. electric-type pokémon are very effective against flying and water-type pokémon and weak against ground-type pokémon.</p>
     <a href="media/evolution_line_pikachu.png" class="button">view pikachu's evolutionary line</a>
     <a href="https://youtu.be/Ma_YkTqHh2w?si=p_58sLNVVIUDb6hd">pikachu sound</a>
@@ -34,7 +37,7 @@
 
   <section>
     <h2>2. charmander</h2>
-    <img src="media/charmander.jpg" alt="charmander" />
+    <img src="media/charmander.jpg" alt="charmander" class="pokemon-image"/>
     <p>charmander is a fire-type pokémon. charmander is recognized for its flame-tipped tail and its fiery spirit. fire-type pokémon are very effective against grass, bug, ice, and steel-type pokémon and are weaker against water, rock, and ground-type pokémon.</p>
     <a href="media/evolution_line_charmander.jpeg" class="button">view charmander's evolutionary line</a>
     <a href="https://youtu.be/OBJIUHTqmig?si=NyZERLYC-TNEbQHw">charmander sound</a>
@@ -42,7 +45,7 @@
 
   <section>
     <h2>3. bulbasaur</h2>
-    <img src="media/bulbasaur.jpg" alt="bulbasaur" />
+    <img src="media/bulbasaur.jpg" alt="bulbasaur" class="pokemon-image"/>
     <p>bulbasaur is a grass and poison-type pokémon and is the first pokémon in the pokédex. bulbasaur is known for its teal color and spouting plant on its back. grass-type pokémon are effective against water, ground, and rock-type pokémon while being weaker to fire, bug, flying, and poison-type pokémon.</p>
     <a href="media/evolution_line_bulbasaur.jpg" class="button">view bulbasaur's evolutionary line</a>
     <a href="https://youtu.be/cpW44V70NAE?si=FPxgJut8j5i4gq-D">bulbasaur sound</a>
@@ -50,7 +53,7 @@
 
   <section>
     <h2>4. squirtle</h2>
-    <img src="media/squirtle.jpg" alt="squirtle" />
+    <img src="media/squirtle.jpg" alt="squirtle" class="pokemon-image"/>
     <p>squirtle is a water-type pokémon. squirtle is known for its playful nature and ability to shoot water from its mouth. water-type pokémon are super effective against fire, ground, and rock-type pokémon while being weaker to electric and grass-type pokémon.</p>
     <a href="media/evolution_line_squirtle.jpg" class="button">view squirtle's evolutionary line</a>
     <a href="https://youtu.be/Eelfx9KoXKE?si=epjC8iVY7bL79Bfb">squirtle sound</a>
@@ -58,7 +61,7 @@
 
   <section>
     <h2>5. jigglypuff</h2>
-    <img src="media/jigglypuff.jpg" alt="jigglypuff"/>
+    <img src="media/jigglypuff.jpg" alt="jigglypuff" class="pokemon-image"/>
     <p>jigglypuff is a normal and fairy-type pokémon. jigglypuff is known for its ability to sing lullabies that make others fall asleep. since jigglypuff is both a normal and fairy-type pokémon, jigglypuff is super effective against fighting, dragon, and dark-type pokémon while weaker towards steel, poison, and fighting-type pokémon.</p>
     <a href="media/evolution_line_jigglypuff.jpg" class="button">view jigglypuff's evolutionary line</a>
     <a href="https://youtu.be/d2NTtbusUso?si=Xb4iEeWgScD4esJM">jigglypuff song</a>
@@ -68,6 +71,24 @@
   <footer id="footer">
     <p>end of gallery</p>
   </footer>
+
+  <!-- slider section moved to the bottom -->
+  <section id="slider">
+    <h2>pokémon evolutionary lines</h2>
+    
+    <!-- slider images (evolution lines) -->
+    <div class="slider">
+      <img class="slider-image" src="media/evolution_line_pikachu.png" alt="pikachu evolution" />
+      <img class="slider-image" src="media/evolution_line_charmander.jpeg" alt="charmander evolution" />
+      <img class="slider-image" src="media/evolution_line_bulbasaur.jpg" alt="bulbasaur evolution" />
+      <img class="slider-image" src="media/evolution_line_squirtle.jpg" alt="squirtle evolution" />
+      <img class="slider-image" src="media/evolution_line_jigglypuff.jpg" alt="jigglypuff evolution" />
+    </div>
+
+    <!-- slider controls -->
+    <button id="prev">previous</button>
+    <button id="next">next</button>
+  </section>
 </body>
 </html>
 
